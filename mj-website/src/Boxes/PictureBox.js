@@ -1,13 +1,13 @@
 import React from 'react';
 import { Carousel } from "@material-tailwind/react";
-import Lakepic from './pictures/lake.png';
-import Parkpic from './pictures/park.png';
-import Posterpic from './pictures/poster.png';
-import Snowmanpic from './pictures/snowman.png';
-import Sumopic from './pictures/sumo.png';
-import Sunsetpic from './pictures/sunset.png';
-import Sunspherepic from './pictures/sunsphere.png';
-import Waterfallpic from './pictures/waterfall.png';
+import Lakepic from '../Pictures/lake.png';
+import Parkpic from '../Pictures/park.png';
+import Posterpic from '../Pictures/poster.png';
+import Snowmanpic from '../Pictures/snowman.png';
+import Sumopic from '../Pictures/sumo.png';
+import Sunsetpic from '../Pictures/sunset.png';
+import Sunspherepic from '../Pictures/sunsphere.png';
+import Waterfallpic from '../Pictures/waterfall.png';
 
 function PictureBox() {
     return (
