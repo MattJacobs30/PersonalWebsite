@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Picture from './picture.png'
 import Header from './Header';
 import NameBox from './NameBox';
 import DescribeBox from './DescribeBox';
@@ -8,12 +7,10 @@ import PictureBox from './PictureBox';
 
 function App() {
   return (
-    <div>
-      <div>
-        <Header />
-      </div>
+    <div className='bg-gray-200'>
+      <Header />
       <div className='flex justify-evenly mt-8'>
-        <div className='flex-row'>
+        <div className='flex-row mr-2 ml-4'>
           <NameBox />
           <DescribeBox/>
         </div>
