@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowRight, Download, Github, ExternalLink, Cpu, Mountain, BookOpen, Heart, Trophy, ChevronLeft, ChevronRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const useIntersectionObserver = (options = {}) => {
   const elementsRef = useRef<Array<HTMLElement | null>>([]);
@@ -393,14 +392,14 @@ const Home: React.FC = () => {
                     />
                   </div>
                 </div>
-                <div className="p-6 space-y-4 flex-1 flex flex-col relative bg-[#FFFBF7]">
-                  <div className="flex justify-between items-start">
+                <div className="p-6 flex-1 flex flex-col relative bg-[#FFFBF7]">
+                  <div className="flex justify-between items-start mb-4">
                     <h3 className="text-xl font-bold text-stone-900">{project.title}</h3>
                   </div>
                   
-                  <p className="text-stone-600 text-sm">{project.description}</p>
+                  <p className="text-stone-600 text-sm mb-4">{project.description}</p>
                   
-                  <div className="flex flex-wrap gap-2 pt-2 mb-4">
+                  <div className="flex flex-wrap gap-2 pt-2 mb-4 mt-auto">
                     {project.tags.map(tag => (
                       <span key={tag} className="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-medium rounded-full">
                         {tag}
@@ -409,7 +408,7 @@ const Home: React.FC = () => {
                   </div>
 
                   {(project.githubUrl || project.demoUrl || project.learnMoreUrl) && (
-                    <div className="flex gap-4 pt-4 mt-auto border-t border-stone-100">
+                    <div className="flex gap-4 pt-4 border-t border-stone-100">
                       {project.githubUrl && (
                         <a 
                           href={project.githubUrl} 

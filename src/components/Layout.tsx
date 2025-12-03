@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { Menu, X, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Github, Linkedin, Mail, Download } from 'lucide-react';
 
 const Layout: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -118,6 +118,10 @@ const Layout: React.FC = () => {
             <a href="mailto:mattswjacobs22@gmail.com" className="flex items-center gap-3 text-stone-600 hover:text-amber-600 transition-colors group">
               <Mail size={28} className="text-stone-400 group-hover:text-amber-600 transition-colors" />
               <span className="font-semibold text-lg">Email</span>
+            </a>
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-stone-600 hover:text-amber-600 transition-colors group">
+              <Download size={28} className="text-stone-400 group-hover:text-amber-600 transition-colors" />
+              <span className="font-semibold text-lg">Resume</span>
             </a>
           </div>
         </div>
