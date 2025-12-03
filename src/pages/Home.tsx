@@ -175,7 +175,7 @@ const Home: React.FC = () => {
       <div className="max-w-4xl mx-auto space-y-12">
         {/* About Me Section - Carousel */}
         <section id="about" className="space-y-8 scroll-mt-24">
-          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
+          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center justify-center md:justify-start gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
             About Me
           </h2>
           <div ref={addRef} className="opacity-0 translate-y-8 transition-all duration-700 ease-out">
@@ -201,14 +201,14 @@ const Home: React.FC = () => {
                 {/* Content Section */}
                 <div className="md:w-1/2 p-6 md:p-8 flex flex-col justify-center relative">
                   <div className="space-y-6">
-                    <div className="flex items-center gap-3 text-amber-600">
+                    <div className="flex items-center justify-center md:justify-start gap-3 text-amber-600">
                       {interests[currentInterestIndex].icon}
                       <h3 className="text-2xl font-bold text-stone-900">
                         {interests[currentInterestIndex].title}
                       </h3>
                     </div>
                     
-                    <p className="text-lg text-stone-600 leading-relaxed min-h-[100px]">
+                    <p className="text-lg text-stone-600 leading-relaxed min-h-[100px] text-center md:text-left">
                       {interests[currentInterestIndex].description}
                     </p>
 
@@ -247,12 +247,12 @@ const Home: React.FC = () => {
 
         {/* Education Section - Restructured */}
         <section id="education" className="space-y-8 scroll-mt-24">
-          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
+          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center justify-center md:justify-start gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
             Education
           </h2>
           
           <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-            <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
               <div className="w-24 h-24 bg-[#FFFBF7] rounded-xl p-2 border border-stone-100 flex items-center justify-center overflow-hidden shadow-sm flex-shrink-0">
                 <img src="/images/utk_logo.png" alt="University of Tennessee" className="w-full h-full object-contain" />
               </div>
@@ -263,7 +263,7 @@ const Home: React.FC = () => {
                   <div className="text-stone-500 text-lg">Knoxville, TN</div>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-4 text-left">
                   <div className="bg-[#FDF8F5] p-4 rounded-lg border border-stone-100">
                     <div className="font-bold text-lg text-stone-900">B.S. Computer Engineering</div>
                     <div className="text-amber-600 font-medium">Minor in Integrated Business and Engineering</div>
@@ -295,20 +295,20 @@ const Home: React.FC = () => {
 
         {/* Experience Section */}
         <section id="experience" className="space-y-8 scroll-mt-24">
-          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
+          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center justify-center md:justify-start gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
             Experience
           </h2>
           
           <div className="space-y-8">
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                    <img src="/images/sentinel_logo.png" alt="Sentinel Devices" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-stone-900">Software Engineer / Application Engineer</h3>
                   <div className="text-amber-600 font-medium mb-2">Sentinel Devices • Feb 2024 - Present</div>
-                  <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
+                  <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600 text-left">
                     <li>Built complete frontend platform from scratch using React and TypeScript for an IoT-based PLC anomaly detection system.</li>
                     <li>Architected and developed machine learning models for real-time anomaly detection on embedded devices.</li>
                     <li>Engineered robust backend infrastructure including REST APIs, Docker/Balena containerization, and nginx configuration.</li>
@@ -320,14 +320,14 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/epic_lab_logo.png" alt="EPIC Lab" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-stone-900">Undergraduate Researcher</h3>
                   <div className="text-amber-600 font-medium mb-2">EPIC Lab UTK • Sep 2023 - Feb 2024</div>
-                  <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
+                  <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600 text-left">
                     <li>Developed microcontroller-based sensing systems using Arduino IDE to control impedance measurement components for advanced materials characterization and self-sensing asphalt research.</li>
                     <li>Implemented machine learning algorithms on analog sensor datasets and created comprehensive data visualizations of electrical current flow patterns through cement-based materials.</li>
                     <li>Designed and fabricated complete electronic circuits through precision soldering techniques, ensuring reliable signal transmission and data acquisition across interconnected sensor networks.</li>
@@ -337,14 +337,14 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/oak_ridge_logo.png" alt="ORNL" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-stone-900">Power Systems Engineering Intern</h3>
                   <div className="text-amber-600 font-medium mb-2">Oak Ridge National Laboratory • May 2023 - Jul 2023</div>
-                  <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
+                  <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600 text-left">
                     <li>Systematically analyzed and documented over 600 critical electrical components across nuclear facilities, establishing comprehensive asset management protocols and ensuring regulatory compliance.</li>
                     <li>Leveraged ETAP and AutoCAD software to model and categorize complex electrical systems in three major national nuclear facilities, and delivered technical presentations showcasing power systems analysis findings.</li>
                   </ul>
@@ -353,14 +353,14 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/subway.png" alt="Subway" className="w-full h-full object-contain" />
                 </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-stone-900">Sandwich Artist</h3>
                     <div className="text-amber-600 font-medium mb-2">Subway • May 2022 - Aug 2022</div>
-                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
+                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600 text-left">
                       <li>Prepared fresh ingredients and assembled sandwiches for over 150 customers daily, maintaining a clean and efficient workspace during peak hours.</li>
                       <li>Managed the cash register and handled customer orders with a friendly attitude to ensure a positive experience.</li>
                     </ul>
@@ -373,7 +373,7 @@ const Home: React.FC = () => {
         {/* Projects Section - Moved to Home */}
         <section id="projects" className="space-y-8 scroll-mt-24">
           <div ref={addRef} className="space-y-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
-            <h2 className="text-2xl font-bold text-stone-900">Projects</h2>
+            <h2 className="text-2xl font-bold text-stone-900 text-center md:text-left">Projects</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -393,13 +393,13 @@ const Home: React.FC = () => {
                   </div>
                 </div>
                 <div className="p-6 flex-1 flex flex-col relative bg-[#FFFBF7]">
-                  <div className="flex justify-between items-start mb-4">
-                    <h3 className="text-xl font-bold text-stone-900">{project.title}</h3>
+                  <div className="flex justify-center md:justify-between items-center md:items-start mb-4">
+                    <h3 className="text-xl font-bold text-stone-900 text-center md:text-left">{project.title}</h3>
                   </div>
                   
                   <p className="text-stone-600 text-sm mb-4">{project.description}</p>
                   
-                  <div className="flex flex-wrap gap-2 pt-2 mb-4 mt-auto">
+                  <div className="flex flex-wrap justify-center md:justify-start gap-2 pt-2 mb-4 mt-auto">
                     {project.tags.map(tag => (
                       <span key={tag} className="px-3 py-1 bg-amber-50 text-amber-700 text-xs font-medium rounded-full">
                         {tag}
@@ -408,7 +408,7 @@ const Home: React.FC = () => {
                   </div>
 
                   {(project.githubUrl || project.demoUrl || project.learnMoreUrl) && (
-                    <div className="flex gap-4 pt-4 border-t border-stone-100">
+                    <div className="flex justify-center md:justify-start gap-4 pt-4 border-t border-stone-100">
                       {project.githubUrl && (
                         <a 
                           href={project.githubUrl} 
@@ -452,20 +452,20 @@ const Home: React.FC = () => {
 
         {/* Clubs & Leadership Section */}
         <section id="leadership" className="space-y-8 scroll-mt-24">
-          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
+          <h2 ref={addRef} className="text-2xl font-bold text-stone-900 flex items-center justify-center md:justify-start gap-2 opacity-0 translate-y-8 transition-all duration-700 ease-out">
             Clubs & Leadership
           </h2>
           
           <div className="space-y-8">
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex flex-col sm:flex-row gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/aaiv_logo.png" alt="AAIV" className="w-full h-full object-contain" />
                 </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-stone-900">Asian American Intervarsity</h3>
                     <div className="text-amber-600 font-medium mb-2">Vice President • Aug 2023 - Present</div>
-                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
+                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600 text-left">
                       <li>Organized bi-weekly community events and Bible studies, handling everything from planning the content to booking venues.</li>
                       <li>Coordinated weekly rides specifically for students needing transportation to off-campus events, managing driver schedules and routes.</li>
                       <li>Mentored new student leaders, helping them grow their skills and confidence to serve the community.</li>
@@ -475,14 +475,14 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-               <div className="flex flex-col sm:flex-row gap-6 items-start">
+               <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/h4i_logo.png" alt="Hack4Impact" className="w-full h-full object-contain" />
                 </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-stone-900">Hack4Impact Developer</h3>
                     <div className="text-amber-600 font-medium mb-2">Developer • Aug 2023 - May 2025</div>
-                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
+                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600 text-left">
                       <li>Built web applications for non-profits using React and Node.js to help them solve real-world problems.</li>
                       <li>Worked in an Agile team with weekly sprints to consistently deliver new features and improvements.</li>
                     </ul>
@@ -491,14 +491,14 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-               <div className="flex flex-col sm:flex-row gap-6 items-start">
+               <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start text-center sm:text-left">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/makers_club_logo.png" alt="Maker's Club" className="w-full h-full object-contain" />
                 </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-stone-900">Maker’s Club</h3>
                     <div className="text-amber-600 font-medium mb-2">Treasurer • Aug 2023 - May 2024</div>
-                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
+                    <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600 text-left">
                       <li>Managed the club's budget and allocated funds to support student projects and workshops.</li>
                       <li>Planned project timelines and secured grant funding to provide better resources for members.</li>
                     </ul>
