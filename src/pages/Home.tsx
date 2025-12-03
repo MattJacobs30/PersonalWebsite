@@ -361,8 +361,8 @@ const Home: React.FC = () => {
                     <h3 className="text-xl font-bold text-stone-900">Sandwich Artist</h3>
                     <div className="text-amber-600 font-medium mb-2">Subway • May 2022 - Aug 2022</div>
                     <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
-                      <li>Optimized daily food preparation workflows to serve over 150 customers daily, maintaining high standards of quality and efficiency in a fast-paced environment.</li>
-                      <li>Processed financial transactions with precision while delivering exceptional customer service to ensure repeat business and operational excellence.</li>
+                      <li>Prepared fresh ingredients and assembled sandwiches for over 150 customers daily, maintaining a clean and efficient workspace during peak hours.</li>
+                      <li>Managed the cash register and handled customer orders with a friendly attitude to ensure a positive experience.</li>
                     </ul>
                   </div>
               </div>
@@ -466,9 +466,9 @@ const Home: React.FC = () => {
                     <h3 className="text-xl font-bold text-stone-900">Asian American Intervarsity</h3>
                     <div className="text-amber-600 font-medium mb-2">Vice President • Aug 2023 - Present</div>
                     <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
-                      <li>Directed bi-weekly large-scale community events and Bible studies for student members, managing all logistical aspects from content creation to venue coordination.</li>
-                      <li>Engineered a robust transportation coordination system to facilitate weekly off-campus travel for student members, optimizing driver schedules and route planning.</li>
-                      <li>Mentored emerging student leaders through a structured servant leadership framework, fostering long-term community growth and development.</li>
+                      <li>Organized bi-weekly community events and Bible studies, handling everything from planning the content to booking venues.</li>
+                      <li>Coordinated weekly rides specifically for students needing transportation to off-campus events, managing driver schedules and routes.</li>
+                      <li>Mentored new student leaders, helping them grow their skills and confidence to serve the community.</li>
                     </ul>
                   </div>
               </div>
@@ -483,8 +483,8 @@ const Home: React.FC = () => {
                     <h3 className="text-xl font-bold text-stone-900">Hack4Impact Developer</h3>
                     <div className="text-amber-600 font-medium mb-2">Developer • Aug 2023 - May 2025</div>
                     <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
-                      <li>Developed full-stack web applications for non-profit organizations using React and Node.js, delivering production-ready solutions that solved critical business needs.</li>
-                      <li>Operated within an Agile development environment, utilizing Scrum methodologies to ensure rapid iteration and continuous delivery of software features.</li>
+                      <li>Built web applications for non-profits using React and Node.js to help them solve real-world problems.</li>
+                      <li>Worked in an Agile team with weekly sprints to consistently deliver new features and improvements.</li>
                     </ul>
                   </div>
               </div>
@@ -499,8 +499,8 @@ const Home: React.FC = () => {
                     <h3 className="text-xl font-bold text-stone-900">Maker’s Club</h3>
                     <div className="text-amber-600 font-medium mb-2">Treasurer • Aug 2023 - May 2024</div>
                     <ul className="list-disc list-outside ml-4 space-y-2 text-stone-600">
-                      <li>Managed club finances and strategically allocated funds to support diverse student engineering projects and technical workshops.</li>
-                      <li>Architected project development timelines and successfully secured external funding grants to expand club capabilities and member resources.</li>
+                      <li>Managed the club's budget and allocated funds to support student projects and workshops.</li>
+                      <li>Planned project timelines and secured grant funding to provide better resources for members.</li>
                     </ul>
                   </div>
               </div>
