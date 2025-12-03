@@ -212,7 +212,7 @@ const Home: React.FC = () => {
                       {interests[currentInterestIndex].description}
                     </p>
 
-                    <div className="flex items-center gap-4 pt-4">
+                    <div className="flex items-center justify-center md:justify-start gap-4 pt-4">
                       <button 
                         onClick={prevInterest}
                         className="p-2 rounded-full border border-stone-200 text-stone-600 hover:bg-stone-50 hover:text-amber-600 transition-colors"
@@ -301,7 +301,7 @@ const Home: React.FC = () => {
           
           <div className="space-y-8">
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                    <img src="/images/sentinel_logo.png" alt="Sentinel Devices" className="w-full h-full object-contain" />
                 </div>
@@ -320,7 +320,7 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/epic_lab_logo.png" alt="EPIC Lab" className="w-full h-full object-contain" />
                 </div>
@@ -337,7 +337,7 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/oak_ridge_logo.png" alt="ORNL" className="w-full h-full object-contain" />
                 </div>
@@ -353,7 +353,7 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/subway.png" alt="Subway" className="w-full h-full object-contain" />
                 </div>
@@ -458,7 +458,7 @@ const Home: React.FC = () => {
           
           <div className="space-y-8">
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-              <div className="flex gap-6 items-start">
+              <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/aaiv_logo.png" alt="AAIV" className="w-full h-full object-contain" />
                 </div>
@@ -475,7 +475,7 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-               <div className="flex gap-6 items-start">
+               <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/h4i_logo.png" alt="Hack4Impact" className="w-full h-full object-contain" />
                 </div>
@@ -491,7 +491,7 @@ const Home: React.FC = () => {
             </div>
 
             <div ref={addRef} className="group relative bg-[#FFFBF7] p-6 rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-all duration-700 ease-out opacity-0 translate-y-8">
-               <div className="flex gap-6 items-start">
+               <div className="flex flex-col sm:flex-row gap-6 items-start">
                 <div className="w-20 h-20 flex-shrink-0 bg-[#FFFBF7] rounded-lg p-1 border border-stone-100 flex items-center justify-center overflow-hidden">
                   <img src="/images/makers_club_logo.png" alt="Maker's Club" className="w-full h-full object-contain" />
                 </div>
